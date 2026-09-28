@@ -1,12 +1,41 @@
 @import "tailwindcss";
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+:root{
+  --bg:#F8FAFC;
+  --surface:#FFFFFF;
+  --primary:#6D28D9;
+  --secondary:#0891B2;
+  --text:#0F172A;
+  --text-secondary:#64748B;
+  --border:#E2E8F0;
+}
+
+.dark{
+  --bg:#0B1020;
+  --surface:#131A2B;
+  --primary:#7C3AED;
+  --secondary:#06B6D4;
+  --text:#F8FAFC;
+  --text-secondary:#94A3B8;
+  --border:#293548;
+}
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-  font-family: Inter, sans-serif;
-  background:#F8FAFC;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:.3s ease;
 }
